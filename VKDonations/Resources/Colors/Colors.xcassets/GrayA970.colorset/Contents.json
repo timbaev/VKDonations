@@ -1,0 +1,20 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "Fugen"
+  },
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0.027450980618596077",
+          "alpha" : "1.0",
+          "blue" : "0.031372550874948515",
+          "green" : "0.027450980618596077"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ]
+}

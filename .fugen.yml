@@ -1,0 +1,22 @@
+base:
+  accessToken:
+    env: FUGEN_ACCESS_TOKEN
+
+colorStyles:
+  file:
+    key: gbgh7oTwccNQM0WokeKP81
+    includedNodes:
+      - 58%3A85
+  assets: VKDonations/Resources/Colors/Colors.xcassets
+  destination: VKDonations/Resources/Colors/ColorStyle.swift
+  templateOptions:
+    publicAccess: false
+
+textStyles:
+  file:
+    key: TzBnH4AzemZanZC1qPwaY3
+    includedNodes:
+      - 5%3A0
+  destination: VKDonations/Resources/Text/TextStyle.swift
+  templateOptions:
+    publicAccess: false
