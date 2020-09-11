@@ -15,6 +15,14 @@
 		5E6AF0BB250BA6A30056E454 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF0BA250BA6A30056E454 /* Colors.xcassets */; };
 		5E6AF0C0250BE8770056E454 /* ColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0BF250BE8770056E454 /* ColorStyle.swift */; };
 		5E6AF0C3250BE8840056E454 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0C2250BE8840056E454 /* TextStyle.swift */; };
+		5E6AF0F0250C119A0056E454 /* DonationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF0EF250C11020056E454 /* DonationList.storyboard */; };
+		5E6AF0F4250C19F00056E454 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0F3250C19F00056E454 /* PrimaryButton.swift */; };
+		5E6AF0F7250C1A000056E454 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0F5250C1A000056E454 /* PlaceholderView.swift */; };
+		5E6AF0F8250C1A000056E454 /* PlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF0F6250C1A000056E454 /* PlaceholderView.xib */; };
+		5E6AF0FB250C1A0F0056E454 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0F9250C1A0F0056E454 /* Button.swift */; };
+		5E6AF0FC250C1A0F0056E454 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FA250C1A0F0056E454 /* NibView.swift */; };
+		5E6AF0FE250C1A220056E454 /* PrimaryNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FD250C1A220056E454 /* PrimaryNavigationController.swift */; };
+		5E6AF100250C1A3D0056E454 /* DonationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FF250C1A3D0056E454 /* DonationListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		5E6AF0BA250BA6A30056E454 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5E6AF0BF250BE8770056E454 /* ColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
 		5E6AF0C2250BE8840056E454 /* TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		5E6AF0EF250C11020056E454 /* DonationList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonationList.storyboard; sourceTree = "<group>"; };
+		5E6AF0F3250C19F00056E454 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		5E6AF0F5250C1A000056E454 /* PlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		5E6AF0F6250C1A000056E454 /* PlaceholderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceholderView.xib; sourceTree = "<group>"; };
+		5E6AF0F9250C1A0F0056E454 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5E6AF0FA250C1A0F0056E454 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		5E6AF0FD250C1A220056E454 /* PrimaryNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryNavigationController.swift; sourceTree = "<group>"; };
+		5E6AF0FF250C1A3D0056E454 /* DonationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationListViewController.swift; sourceTree = "<group>"; };
 		D71CE2180750E0518B53388E /* Pods-VKDonations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKDonations.debug.xcconfig"; path = "Target Support Files/Pods-VKDonations/Pods-VKDonations.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C3A4F455E22D3D0A6535F5 /* Pods_VKDonations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKDonations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,7 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				5E6AF0B8250BA4B10056E454 /* Resources */,
+				5E6AF0E7250C0E910056E454 /* Screens */,
 				5E6AF0BD250BDDC70056E454 /* SupportingFiles */,
+				5E6AF0CB250C036A0056E454 /* Tools */,
+				5E6AF0C4250C020F0056E454 /* Views */,
 			);
 			path = VKDonations;
 			sourceTree = "<group>";
@@ -115,6 +134,91 @@
 				5E6AF0C2250BE8840056E454 /* TextStyle.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		5E6AF0C4250C020F0056E454 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0C5250C02160056E454 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E6AF0C5250C02160056E454 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0C9250C03190056E454 /* PrimaryButton */,
+				5E6AF0C6250C02260056E454 /* Placeholder */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5E6AF0C6250C02260056E454 /* Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0F5250C1A000056E454 /* PlaceholderView.swift */,
+				5E6AF0F6250C1A000056E454 /* PlaceholderView.xib */,
+			);
+			path = Placeholder;
+			sourceTree = "<group>";
+		};
+		5E6AF0C9250C03190056E454 /* PrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0F3250C19F00056E454 /* PrimaryButton.swift */,
+			);
+			path = PrimaryButton;
+			sourceTree = "<group>";
+		};
+		5E6AF0CB250C036A0056E454 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0E9250C0EC20056E454 /* Components */,
+				5E6AF0CC250C036E0056E454 /* Views */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5E6AF0CC250C036E0056E454 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0F9250C1A0F0056E454 /* Button.swift */,
+				5E6AF0FA250C1A0F0056E454 /* NibView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E6AF0E7250C0E910056E454 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0E8250C0EB00056E454 /* DonationList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5E6AF0E8250C0EB00056E454 /* DonationList */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0EE250C10FD0056E454 /* Storyboard */,
+				5E6AF0FF250C1A3D0056E454 /* DonationListViewController.swift */,
+			);
+			path = DonationList;
+			sourceTree = "<group>";
+		};
+		5E6AF0E9250C0EC20056E454 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0FD250C1A220056E454 /* PrimaryNavigationController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5E6AF0EE250C10FD0056E454 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5E6AF0EF250C11020056E454 /* DonationList.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C270D8EF1D6F09F3D6922620 /* Pods */ = {
@@ -193,8 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6AF0F8250C1A000056E454 /* PlaceholderView.xib in Resources */,
 				5E6AF0B1250BA3C60056E454 /* LaunchScreen.storyboard in Resources */,
 				5E6AF0BB250BA6A30056E454 /* Colors.xcassets in Resources */,
+				5E6AF0F0250C119A0056E454 /* DonationList.storyboard in Resources */,
 				5E6AF0AE250BA3C60056E454 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,9 +337,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6AF0F4250C19F00056E454 /* PrimaryButton.swift in Sources */,
 				5E6AF0C3250BE8840056E454 /* TextStyle.swift in Sources */,
+				5E6AF100250C1A3D0056E454 /* DonationListViewController.swift in Sources */,
 				5E6AF0C0250BE8770056E454 /* ColorStyle.swift in Sources */,
+				5E6AF0FE250C1A220056E454 /* PrimaryNavigationController.swift in Sources */,
+				5E6AF0FC250C1A0F0056E454 /* NibView.swift in Sources */,
 				5E6AF0A5250BA3C30056E454 /* AppDelegate.swift in Sources */,
+				5E6AF0F7250C1A000056E454 /* PlaceholderView.swift in Sources */,
+				5E6AF0FB250C1A0F0056E454 /* Button.swift in Sources */,
 				5E6AF0A7250BA3C30056E454 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
