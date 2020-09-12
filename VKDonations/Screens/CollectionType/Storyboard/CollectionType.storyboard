@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JVR-s8-ujr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Тип сбора-->
+        <scene sceneID="Cqo-rB-Hp1">
+            <objects>
+                <viewController title="Тип сбора" id="JVR-s8-ujr" customClass="CollectionTypeViewController" customModule="VKDonations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PQu-0I-A2g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BzM-4w-z4a">
+                                <rect key="frame" x="0.0" y="374" width="414" height="148"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="yAv-OM-yg4" customClass="BannerControl" customModule="VKDonations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="target_outline_28"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Целевой сбор"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="Когда есть определённая цель"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-cX-RCM" customClass="BannerControl" customModule="VKDonations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="414" height="74"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calendar_outline_28"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Регулярный сбор"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="Если помощь нужна ежемесячно"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BzM-4w-z4a" firstAttribute="centerY" secondItem="PQu-0I-A2g" secondAttribute="centerY" id="FKF-l7-Mo7"/>
+                            <constraint firstItem="zJX-sv-nNf" firstAttribute="trailing" secondItem="BzM-4w-z4a" secondAttribute="trailing" id="Gn2-UL-yJd"/>
+                            <constraint firstItem="BzM-4w-z4a" firstAttribute="leading" secondItem="zJX-sv-nNf" secondAttribute="leading" id="J0K-Qo-A1r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJX-sv-nNf"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBe-Qx-D8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar_outline_28" width="28" height="28"/>
+        <image name="target_outline_28" width="28" height="28"/>
+    </resources>
+</document>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O6c-yf-4dq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,12 +12,12 @@
         <!--Пожертвования-->
         <scene sceneID="xxz-9q-npW">
             <objects>
-                <viewController id="mVa-l2-gb7" sceneMemberID="viewController">
+                <viewController id="mVa-l2-gb7" customClass="DonationListViewController" customModule="VKDonations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xng-5B-QG8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-8h-pIs" customClass="PlaceholderView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-8h-pIs" customClass="PlaceholderView" customModule="VKDonations" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="350" width="414" height="196"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -37,15 +38,29 @@
                         <viewLayoutGuide key="safeArea" id="rll-mj-JZO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Пожертвования" id="bMe-uK-ydh"/>
+                    <connections>
+                        <outlet property="placeholderView" destination="sbH-8h-pIs" id="oLv-Ov-VkI"/>
+                        <segue destination="TWw-KH-rhd" kind="show" identifier="ShowCollectionType" id="OmH-2q-sUl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUB-0c-TwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018.840579710145" y="114.50892857142857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--CollectionType-->
+        <scene sceneID="rIP-i5-giE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CollectionType" id="TWw-KH-rhd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kbd-BN-wWT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o48-xc-sE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="115"/>
+        </scene>
+        <!--Primary Navigation Controller-->
         <scene sceneID="LJm-uD-Q53">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O6c-yf-4dq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O6c-yf-4dq" customClass="PrimaryNavigationController" customModule="VKDonations" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BgX-uO-r6U">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

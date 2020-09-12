@@ -33,12 +33,19 @@ final class PrimaryNavigationController: UINavigationController {
         self.navigationBar.tintColor = ColorStyle.azure300.color
     }
 
+    private func configureSelf() {
+        self.interactivePopGestureRecognizer?.delegate = nil
+
+        super.delegate = self
+    }
+
     // MARK: - UINavigationController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.configureAppearance()
+        self.configureSelf()
     }
 }
 

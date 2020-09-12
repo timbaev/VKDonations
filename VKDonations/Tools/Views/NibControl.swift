@@ -1,41 +1,28 @@
 //
-//  NibView.swift
+//  NibControl.swift
 //  VKDonations
 //
-//  Created by Timur Shafigullin on 11/09/2020.
+//  Created by Timur Shafigullin on 12/09/2020.
 //  Copyright © 2020 Timbaev. All rights reserved.
 //
 
 import UIKit
 
-class NibView: UIView {
+class NibControl: Control {
 
     // MARK: - Instance Properties
 
     private(set) var contentView: UIView!
 
-    // MARK: - Initializers
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-
-        self.initialize()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        self.initialize()
-    }
-
     // MARK: - Instance Methods
 
     private func configureView() {
         self.contentView = self.loadNib()
+        self.contentView.frame = self.bounds
+        self.contentView.isUserInteractionEnabled = false
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
 
         self.addSubview(self.contentView)
-
-        self.contentView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             self.contentView.topAnchor.constraint(equalTo: self.topAnchor),
@@ -45,12 +32,11 @@ class NibView: UIView {
         ])
     }
 
-    // MARK: -
+    // MARK: - Control
 
-    /// Override this method to setup initial state after initialization (e.g. add subviews, setup constraints and etc).
-    /// Helps not write initializers in the subclasses.
-    /// Default implementation configure `contentView` from Nib.
-    func initialize() {
+    override func initialize() {
+        super.initialize()
+
         self.backgroundColor = .clear
 
         self.configureView()
