@@ -27,6 +27,9 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Целевой сбор"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="Когда есть определённая цель"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onTargetCollectionBannerTouchUpInside:" destination="JVR-s8-ujr" eventType="touchUpInside" id="vh1-0E-ZQv"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-cX-RCM" customClass="BannerControl" customModule="VKDonations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="74" width="414" height="74"/>
@@ -36,6 +39,9 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Регулярный сбор"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="Если помощь нужна ежемесячно"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onRegularCollectionBannerTouchUpInside:" destination="JVR-s8-ujr" eventType="touchUpInside" id="8Dm-jX-szo"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -49,10 +55,23 @@
                         <viewLayoutGuide key="safeArea" id="zJX-sv-nNf"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="sPM-eR-J6h" kind="show" identifier="ShowCollection" id="HDU-y5-cmE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBe-Qx-D8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="142"/>
+        </scene>
+        <!--Collection-->
+        <scene sceneID="qNe-Ce-0ox">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection" id="sPM-eR-J6h" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GRs-pz-V1W"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIz-et-zBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="142"/>
         </scene>
     </scenes>
     <resources>
