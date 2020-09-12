@@ -23,6 +23,14 @@
 		5E6AF0FC250C1A0F0056E454 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FA250C1A0F0056E454 /* NibView.swift */; };
 		5E6AF0FE250C1A220056E454 /* PrimaryNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FD250C1A220056E454 /* PrimaryNavigationController.swift */; };
 		5E6AF100250C1A3D0056E454 /* DonationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF0FF250C1A3D0056E454 /* DonationListViewController.swift */; };
+		5E6AF106250C1BFA0056E454 /* BannerControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF105250C1BFA0056E454 /* BannerControl.xib */; };
+		5E6AF108250C1E300056E454 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF107250C1E300056E454 /* View.swift */; };
+		5EB5B554250C98D400BF6B80 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5B553250C98D400BF6B80 /* Control.swift */; };
+		5EB5B556250C98FD00BF6B80 /* NibControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5B555250C98FD00BF6B80 /* NibControl.swift */; };
+		5EB5B559250C992500BF6B80 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5B558250C992500BF6B80 /* UIView+Extensions.swift */; };
+		5EB5B55B250C997100BF6B80 /* BannerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5B55A250C997100BF6B80 /* BannerControl.swift */; };
+		5EB5B55F250C9C6F00BF6B80 /* CollectionType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB5B55E250C9C6F00BF6B80 /* CollectionType.storyboard */; };
+		5EB5B561250C9D7E00BF6B80 /* CollectionTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5B560250C9D7E00BF6B80 /* CollectionTypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		5E6AF0FA250C1A0F0056E454 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		5E6AF0FD250C1A220056E454 /* PrimaryNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryNavigationController.swift; sourceTree = "<group>"; };
 		5E6AF0FF250C1A3D0056E454 /* DonationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationListViewController.swift; sourceTree = "<group>"; };
+		5E6AF105250C1BFA0056E454 /* BannerControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerControl.xib; sourceTree = "<group>"; };
+		5E6AF107250C1E300056E454 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5EB5B553250C98D400BF6B80 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		5EB5B555250C98FD00BF6B80 /* NibControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibControl.swift; sourceTree = "<group>"; };
+		5EB5B558250C992500BF6B80 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5EB5B55A250C997100BF6B80 /* BannerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerControl.swift; sourceTree = "<group>"; };
+		5EB5B55E250C9C6F00BF6B80 /* CollectionType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionType.storyboard; sourceTree = "<group>"; };
+		5EB5B560250C9D7E00BF6B80 /* CollectionTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypeViewController.swift; sourceTree = "<group>"; };
 		D71CE2180750E0518B53388E /* Pods-VKDonations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKDonations.debug.xcconfig"; path = "Target Support Files/Pods-VKDonations/Pods-VKDonations.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C3A4F455E22D3D0A6535F5 /* Pods_VKDonations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKDonations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +163,7 @@
 		5E6AF0C5250C02160056E454 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5E6AF101250C1B3D0056E454 /* Banner */,
 				5E6AF0C9250C03190056E454 /* PrimaryButton */,
 				5E6AF0C6250C02260056E454 /* Placeholder */,
 			);
@@ -174,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				5E6AF0E9250C0EC20056E454 /* Components */,
+				5EB5B557250C991900BF6B80 /* Extensions */,
 				5E6AF0CC250C036E0056E454 /* Views */,
 			);
 			path = Tools;
@@ -183,7 +201,10 @@
 			isa = PBXGroup;
 			children = (
 				5E6AF0F9250C1A0F0056E454 /* Button.swift */,
+				5EB5B553250C98D400BF6B80 /* Control.swift */,
+				5EB5B555250C98FD00BF6B80 /* NibControl.swift */,
 				5E6AF0FA250C1A0F0056E454 /* NibView.swift */,
+				5E6AF107250C1E300056E454 /* View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +212,7 @@
 		5E6AF0E7250C0E910056E454 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5EB5B55C250C9C5F00BF6B80 /* CollectionType */,
 				5E6AF0E8250C0EB00056E454 /* DonationList */,
 			);
 			path = Screens;
@@ -217,6 +239,40 @@
 			isa = PBXGroup;
 			children = (
 				5E6AF0EF250C11020056E454 /* DonationList.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5E6AF101250C1B3D0056E454 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5B55A250C997100BF6B80 /* BannerControl.swift */,
+				5E6AF105250C1BFA0056E454 /* BannerControl.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		5EB5B557250C991900BF6B80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5B558250C992500BF6B80 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EB5B55C250C9C5F00BF6B80 /* CollectionType */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5B55D250C9C6600BF6B80 /* Storyboard */,
+				5EB5B560250C9D7E00BF6B80 /* CollectionTypeViewController.swift */,
+			);
+			path = CollectionType;
+			sourceTree = "<group>";
+		};
+		5EB5B55D250C9C6600BF6B80 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5B55E250C9C6F00BF6B80 /* CollectionType.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -298,8 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6AF0F8250C1A000056E454 /* PlaceholderView.xib in Resources */,
+				5E6AF106250C1BFA0056E454 /* BannerControl.xib in Resources */,
 				5E6AF0B1250BA3C60056E454 /* LaunchScreen.storyboard in Resources */,
 				5E6AF0BB250BA6A30056E454 /* Colors.xcassets in Resources */,
+				5EB5B55F250C9C6F00BF6B80 /* CollectionType.storyboard in Resources */,
 				5E6AF0F0250C119A0056E454 /* DonationList.storyboard in Resources */,
 				5E6AF0AE250BA3C60056E454 /* Assets.xcassets in Resources */,
 			);
@@ -337,15 +395,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB5B559250C992500BF6B80 /* UIView+Extensions.swift in Sources */,
+				5EB5B556250C98FD00BF6B80 /* NibControl.swift in Sources */,
+				5EB5B561250C9D7E00BF6B80 /* CollectionTypeViewController.swift in Sources */,
 				5E6AF0F4250C19F00056E454 /* PrimaryButton.swift in Sources */,
 				5E6AF0C3250BE8840056E454 /* TextStyle.swift in Sources */,
 				5E6AF100250C1A3D0056E454 /* DonationListViewController.swift in Sources */,
 				5E6AF0C0250BE8770056E454 /* ColorStyle.swift in Sources */,
 				5E6AF0FE250C1A220056E454 /* PrimaryNavigationController.swift in Sources */,
+				5EB5B554250C98D400BF6B80 /* Control.swift in Sources */,
 				5E6AF0FC250C1A0F0056E454 /* NibView.swift in Sources */,
 				5E6AF0A5250BA3C30056E454 /* AppDelegate.swift in Sources */,
+				5EB5B55B250C997100BF6B80 /* BannerControl.swift in Sources */,
 				5E6AF0F7250C1A000056E454 /* PlaceholderView.swift in Sources */,
 				5E6AF0FB250C1A0F0056E454 /* Button.swift in Sources */,
+				5E6AF108250C1E300056E454 /* View.swift in Sources */,
 				5E6AF0A7250BA3C30056E454 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
