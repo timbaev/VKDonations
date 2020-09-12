@@ -51,7 +51,11 @@ final class PrimaryButton: Button {
 
     // MARK: - Instance Properties
 
-    var style: Style = .medium
+    var style: Style = .medium {
+        didSet {
+            self.setNeedsLayout()
+        }
+    }
 
     // MARK: -
 
